@@ -19,7 +19,7 @@ const SocialIcons = () => {
       <a className="icon" style={styles.icon} href="https://www.instagram.com/ghenzzzz/">
         <i className="fa-brands fa-instagram" aria-hidden="true" title="Gendi Telamdika' Instagram Profile"></i>
       </a>
-      <a className="icon" style={styles.icon} href="https://api.whatsapp.com/send?phone=081284550545">
+      <a className="icon" style={styles.icon} href="https://api.whatsapp.com/send?phone=+6281284550545">
         <i className="fa-brands fa-whatsapp" aria-hidden="true" title="Gendi Telamdika' Whatsapp Profile"></i>
       </a>
     </div>
