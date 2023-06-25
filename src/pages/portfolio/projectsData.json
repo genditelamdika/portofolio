@@ -20,24 +20,15 @@
     "id": "2"
   },
   {
-    "title": "Team",
-    "image": "./projectImages/team.png",
-    "technologies": "JS | Node | Bootstrap | OOP | TTD",
+    "title": "Dumbflix",
+    "image": "./projectImages/dumbflix.jpeg",
+    "technologies": "React JS | Golang | Bootstrap",
     "description": "Team Dashboard is a Node command-line application that takes in information about employees to generate a dynamic HTML web page.",
-    "github": "https://github.com/mdyeates/team-dashboard",
-    "deployed": "https://drive.google.com/file/d/1_atUXTM-L9r4NccsrPaaWqPyNu37ftwH/view",
+    "github": "https://github.com/genditelamdika/dumbflixx-FE.git",
+    "githubBE": "https://github.com/genditelamdika/integration-dumbflix.git",
+    "deployed": "https://dumbflixx-dhuctcla5-genditelamdika.vercel.app/",
     "bgcolor": "#6c4bf4",
     "id": "3"
-  },
-  {
-    "title": "Quiz",
-    "image": "./projectImages/quiz.png",
-    "technologies": "JS | HTML | CSS",
-    "description": "A quiz app on the fundamentals of JavaScript. There are 5 randomly selected multiple-choice questions and the user will have a time limit of 50 seconds. The remaining time will determine their score at the end. The user will be penalised by 10 seconds for every incorrect answer.",
-    "github": "https://github.com/mdyeates/coding-quiz",
-    "deployed": "https://mdyeates.github.io/coding-quiz/",
-    "bgcolor": "#f85781",
-    "id": "4"
   }
 
   

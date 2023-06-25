@@ -4,7 +4,7 @@ import Modal from "react-modal";
 import { useState } from "react";
 import closeModal from "../images/close.svg";
 
-const Project = ({ technologies, title, image, color, id, github, deployed, description }) => {
+const Project = ({ technologies, title, image, color, id, github,githubBE, deployed, description }) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -72,6 +72,9 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
         <p className="projectDescription">{description}</p>
         <button className="btn" onClick={() => (window.location.href = github)}>
           GitHub Repo
+        </button>
+        <button className="btn" onClick={() => (window.location.href = githubBE)}>
+          GitHub Repo BackEnd
         </button>
         <button className="btn" onClick={() => (window.location.href = deployed)}>
           Live Link

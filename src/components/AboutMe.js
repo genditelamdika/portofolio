@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import SocialIcons from "../components/SocialIcons";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
-// import resume from "../pages/about/michael-yeates-resume.pdf";
+import resume from "../pages/about/CV_Gendi_Telamdika.pdf";
 
 const AboutMe = ({ name, email, location, availability, brand }) => {
   const [ref, inView] = useInView({
@@ -20,7 +20,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
   const handleDownload = () => {
     setDownloading(true);
     const link = document.createElement("a");
-    // link.href = resume;
+    link.href = resume;
     link.download = "Michael-Yeates-Resume.pdf";
     link.onload = () => {
       link.remove();
@@ -33,15 +33,15 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
   return (
     <>
     
-    <p style={{ color: "grey" }}>Stay tuned for updates!</p>
+    {/* <p style={{ color: "grey" }}>Stay tuned for updates!</p> */}
      <div className="aboutContainer container">
        <div className="row">
          <motion.div
           className="personalImage col-12 col-lg-4"
           ref={ref}
-          // initial={{ x: "-10vw", opacity: 0 }}
-          // animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
-          // transition={{ duration: 0.4, ease: "easeInOut" }}
+          initial={{ x: "-10vw", opacity: 0 }}
+          animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <img style={{width:"260px"}} src={aboutMeImg} alt={name} />
         </motion.div>
@@ -83,7 +83,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
               </div>
             </div>
             <div className="buttonContainer">
-              <button className="btn downloadCV" /*onClick={handleDownload}*/ disabled={downloading}>
+              <button className="btn downloadCV" onClick={handleDownload} disabled={downloading}>
                 {downloading ? "Downloading..." : "Download Resume"}
               </button>{" "}
               <SocialIcons />

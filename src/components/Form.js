@@ -98,6 +98,7 @@ const Form = () => {
       </div>
       <div className="col-12 formGroup formSubmit">
         <button className="btn" type="submit" style={{ width: "100%" }}>
+          SAVE
           {/* {success ? "Message Sent" : "Send Message"} */}
         </button>
       </div>
